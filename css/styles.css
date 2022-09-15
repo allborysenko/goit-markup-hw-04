@@ -191,6 +191,31 @@ font-weight: 400;
 .benefit-list {
     display: flex;
 }
+
+.list-item::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background-color: var(--bgc-team);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.list-item.icon-antena::before{
+    background-image: url('../images/antenna.svg');
+}
+.list-item.icon-clock::before{
+    background-image: url('../images/clock.svg')
+}
+.list-item.icon-diagrama::before {
+    background-image:url('../images/diagram.svg')
+}
+.list-item.icon-astronavt::before {
+    background-image: url('../images/astronaut.svg')
+}
+
+
 .benefit-list .item {
     margin-right: 30px;
 }
